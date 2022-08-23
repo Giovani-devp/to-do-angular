@@ -8,15 +8,15 @@
   <li *ngFor="let todo of todos">
     {{ todo.tarefa }}
     <button *ngIf="!todo.done" (click)="markAsDone(todo)">
-      Finalizar
+      <i class="far fa-check-circle"></i>
     </button> |
 
     <button *ngIf="todo.done" (click)="markAsUndone(todo)">
-      Refazer
+      <i class="fas fa-check-circle"></i>
     </button> |
 
     <button (click)="remove(todo)">
-      Deletar
+      <i class="far fa-trash-alt"></i>
     </button>
   </li>
 </ul>
